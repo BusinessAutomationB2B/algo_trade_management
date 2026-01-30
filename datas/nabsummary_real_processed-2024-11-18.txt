@@ -1,0 +1,80 @@
+2024-11-18
+nab
+Account list
+Account Summary table
+
+Account
+Current balance	Available balance	Actions
+Ln #0982 Morningside
+BSB: 082-057 Acc: 852680982Account Number: 8 5 2 6 8 0 9 8 2
+-207068.50
+
+View redraw
+
+Ln #2386 Beahan
+BSB: 082-057 Acc: 911852386Account Number: 9 1 1 8 5 2 3 8 6
+-429413.54
+
+View redraw
+
+Ln #2595 Doreen
+BSB: 082-001 Acc: 743652595Account Number: 7 4 3 6 5 2 5 9 5
+-383341.06
+
+View redraw
+
+Ln #4363 Mascot
+BSB: 082-057 Acc: 852674363Account Number: 8 5 2 6 7 4 3 6 3
+-339943.17
+
+View redraw
+
+Ln #6184 North Strath
+BSB: 082-001 Acc: 717586184Account Number: 7 1 7 5 8 6 1 8 4
+-337696.12
+
+View redraw
+
+Ln #6401 Chuwar
+BSB: 082-001 Acc: 743906401Account Number: 7 4 3 9 0 6 4 0 1
+-354548.92
+
+View redraw
+
+Offset for Beahan
+BSB: 082-024 Acc: 198396345Account Number: 1 9 8 3 9 6 3 4 5
+429413.64
+429413.64
+
+Offset for Chuwar
+BSB: 082-001 Acc: 193780487Account Number: 1 9 3 7 8 0 4 8 7
+156.11
+156.11
+
+Offset for Mascot (card)
+BSB: 082-001 Acc: 191237843Account Number: 1 9 1 2 3 7 8 4 3
+339943.24
+339943.24
+
+Offset for Moningside
+BSB: 082-171 Acc: 117838288Account Number: 1 1 7 8 3 8 2 8 8
+207068.09
+207068.09
+
+Offset for NorthStrath
+BSB: 082-001 Acc: 700934680Account Number: 7 0 0 9 3 4 6 8 0
+230239.50
+230239.50
+
+Transaction Account (DRN20100)
+BSB: 082-001 Acc: 192685840Account Number: 1 9 2 6 8 5 8 4 0
+21369.72
+21369.72
+
+Net Position table
+Credit balance:
+1228190.30
+Debit balance:
+-2052011.31
+Net position:
+-823821.01

@@ -1,0 +1,408 @@
+
+<!-- saved from url=(0012)about:srcdoc -->
+<html style="--chakra-ui-color-mode: light;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style data-emotion="emotion-css-cache-global" data-s=""></style><style data-emotion="emotion-css-cache-global" data-s=""></style><style data-emotion="emotion-css-cache-global" data-s=""></style><style data-emotion="emotion-css-cache-global" data-s=""></style><style data-emotion="emotion-css-cache" data-s=""></style><meta name="viewport" content="width=device-width, initial-scale=1"><script>window.KHOROS_CONFIG  = { companyKey: 'nab-prod', widgetId: '8112728a-97e4-4b85-8f62-851a438d7e95', region: 'ap-southeast-2' };
+        (function() {
+            const scriptTag = document.createElement('script');
+            scriptTag.setAttribute('src','https://brand-messenger.app.khoros.com/branches/brand-messenger-v2.21.0/brandmessenger-frame.js');
+            document.head.appendChild(scriptTag);
+        })();</script><script src="https://brand-messenger.app.khoros.com/branches/brand-messenger-v2.21.0/brandmessenger-frame.js"></script><style></style><style id="khoros-injectedAdvancedCss">
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+/** NAB messenger theme **/
+
+/**
+ * Selectors utilise Khoros' documented CSS selectors wherever possible
+ * https://developer.khoros.com/khorosbrandmessengerdocs/docs/advanced-css-classes
+ * Source control ref: https://github.aus.thenational.com/ConvoBank/nab-chat-widget/blob/main/app/frontend/messenger-themes/
+*/
+
+/**
+ * Common / base theme values
+ * Source: https://nuit.aus.thenational.com/foundation/colour
+ */
+:root {
+  --cbx-color-black-base: 0 0 0;
+  --cbx-color-black: rgb(var(--cbx-color-black-base));
+  --cbx-color-white: rgb(255 255 255);
+  --cbx-color-gray30: rgb(77 77 77);
+  --cbx-color-gray50: rgb(128 128 128);
+  --cbx-color-gray90: rgb(230 230 230);
+  --cbx-color-gray96: rgb(245 245 245);
+    --cbx-color-primary-base: 194 0 0;
+    --cbx-color-primary: rgb(var(--cbx-color-primary-base));
+    --cbx-color-primary-dark: rgb(143 0 0);
+    --cbx-proactive-offer-title: 'NAB Virtual Assistant';
+    --cbx-font-stack: 'Source Sans 3', 'Helvetica', 'Arial', sans-serif;
+}
+
+* {
+  font-family: var(--cbx-font-stack) !important;
+}
+
+/**
+* Request from NAB platforms hosting chat to hide the widget FAB
+* completely in print preview mode
+*/
+@media print {
+  body {
+    display: none;
+  }
+}
+
+/** FAB */
+.khWidgetButton {
+  width: 58px;
+  height: 58px;
+  border-color: transparent;
+}
+
+/** First message (proactive offer) */
+.khFirstChatMessageHeader {
+  color: var(--cbx-color-black) !important;
+  background-color: var(--cbx-color-white) !important;
+}
+
+/** Additional pseudo-element for first message tail */
+.khFirstChatMessageHeader::after {
+  position: absolute;
+  right: 20px;
+  bottom: -19px;
+  z-index: -1;
+  border-top: 10px solid var(--cbx-color-white);
+  border-right: 9px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 8px solid transparent;
+  filter: drop-shadow(1px 1px 1px rgb(var(--cbx-color-black-base) / 40%));
+  content: '';
+}
+
+.khFirstChatMessageHeaderText::before {
+  display: block !important;
+  font-weight: bold !important;
+  content: var(--cbx-proactive-offer-title);
+}
+
+.khFirstChatMessageHeaderText p {
+  font-size: 0.875rem !important;
+  line-height: 1.5em !important;
+}
+
+.khCloseButtonWrapper {
+  top: 0 !important;
+  right: 0 !important;
+  left: initial !important;
+  width: 44px !important;
+  height: 44px !important;
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.khFirstMessageCloseButton {
+  width: 44px !important;
+  height: 44px !important;
+  padding: 12px 12px 16px 16px !important;
+}
+
+/* High contrast a11y defect fix */
+@media screen and (-ms-high-contrast: white-on-black) {
+  .khFirstMessageCloseButton {
+    content: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+CiAgICA8c3ZnIGZpbGw9IiNmZmZmIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciICB2aWV3Qm94PSIwIDAgMzAgMzAiIHdpZHRoPSIyMHB4IiBoZWlnaHQ9IjIwcHgiPgogICAgICAgIDxwYXRoIGQ9Ik0gNyA0IEMgNi43NDQxMjUgNCA2LjQ4Nzk2ODcgNC4wOTc0Njg3IDYuMjkyOTY4OCA0LjI5Mjk2ODggTCA0LjI5Mjk2ODggNi4yOTI5Njg4IEMgMy45MDE5Njg3IDYuNjgzOTY4OCAzLjkwMTk2ODcgNy4zMTcwMzEzIDQuMjkyOTY4OCA3LjcwNzAzMTIgTCAxMS41ODU5MzggMTUgTCA0LjI5Mjk2ODggMjIuMjkyOTY5IEMgMy45MDE5Njg3IDIyLjY4Mzk2OSAzLjkwMTk2ODcgMjMuMzE3MDMxIDQuMjkyOTY4OCAyMy43MDcwMzEgTCA2LjI5Mjk2ODggMjUuNzA3MDMxIEMgNi42ODM5Njg4IDI2LjA5ODAzMSA3LjMxNzAzMTMgMjYuMDk4MDMxIDcuNzA3MDMxMiAyNS43MDcwMzEgTCAxNSAxOC40MTQwNjIgTCAyMi4yOTI5NjkgMjUuNzA3MDMxIEMgMjIuNjgyOTY5IDI2LjA5ODAzMSAyMy4zMTcwMzEgMjYuMDk4MDMxIDIzLjcwNzAzMSAyNS43MDcwMzEgTCAyNS43MDcwMzEgMjMuNzA3MDMxIEMgMjYuMDk4MDMxIDIzLjMxNjAzMSAyNi4wOTgwMzEgMjIuNjgyOTY5IDI1LjcwNzAzMSAyMi4yOTI5NjkgTCAxOC40MTQwNjIgMTUgTCAyNS43MDcwMzEgNy43MDcwMzEyIEMgMjYuMDk4MDMxIDcuMzE3MDMxMiAyNi4wOTgwMzEgNi42ODI5Njg4IDI1LjcwNzAzMSA2LjI5Mjk2ODggTCAyMy43MDcwMzEgNC4yOTI5Njg4IEMgMjMuMzE2MDMxIDMuOTAxOTY4NyAyMi42ODI5NjkgMy45MDE5Njg3IDIyLjI5Mjk2OSA0LjI5Mjk2ODggTCAxNSAxMS41ODU5MzggTCA3LjcwNzAzMTIgNC4yOTI5Njg4IEMgNy41MTE1MzEyIDQuMDk3NDY4NyA3LjI1NTg3NSA0IDcgNCB6Ii8+CiAgICA8L3N2Zz4=');
+  }
+}
+
+.khFirstMessageRespondChatArea {
+  min-height: initial !important;
+}
+
+.khFirstMessageRespondChatArea > :not(.khCloseButtonWrapper) {
+  display: none !important;
+}
+
+#khorosFirstMessageChat {
+  top: 75px !important;
+}
+
+/** Widget header */
+.khChatWindowHeader {
+  background-color: var(--cbx-color-black) !important;
+  filter: drop-shadow(0 0 4px var(--cbx-color-gray50));
+}
+
+.khChatWindowHeader svg:hover {
+  border: 1px solid var(--cbx-color-gray50);
+  border-radius: 4px;
+  fill: var(--cbx-color-gray90) !important;
+}
+
+.khChatWindowHeader svg:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--cbx-color-gray90) inset;
+}
+
+.khChatWindowHeaderText {
+  font-weight: 600 !important;
+  font-size: 18px !important;
+  line-height: 24px !important;
+  background-color: var(--cbx-color-black) !important;
+}
+
+/** Welcome screen */
+.khWelcomeScreenContainer {
+  align-items: center;
+  background-color: var(--cbx-color-white);
+  filter: drop-shadow(0 0 4px var(--cbx-color-gray50));
+}
+
+.khWelcomeScreenImageContainer img {
+  padding: 40px 24px 24px;
+}
+
+.khWelcomeScreenContent {
+  padding: 0 24px 24px !important;
+}
+
+.khWelcomeScreenIntroduction p {
+  color: var(--cbx-color-black) !important;
+  font-weight: 700;
+  line-height: 2rem !important;
+}
+
+.khWelcomeScreenIntroduction ul {
+  margin-bottom: 0 !important;
+  margin-left: 1.5rem;
+}
+
+.khWelcomeScreenIntroduction li {
+  color: var(--cbx-color-black);
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.khWelcomeScreenIntroduction p:first-child span {
+  font-size: 24px !important;
+}
+
+.khWelcomeScreenButtonContainer {
+  position: relative !important;
+  padding: 0 24px !important;
+  box-shadow: none !important;
+}
+
+#khorosWelcomeScreenButton {
+  font-weight: 700 !important;
+  font-size: 1rem !important;
+  line-height: 1.5rem !important;
+  border-radius: 4px !important;
+}
+
+#khorosWelcomeScreenButton:focus {
+  text-decoration: underline;
+  background-color: var(--cbx-color-primary-dark) !important;
+  box-shadow: 0 0 0 3px rgb(var(--cbx-color-primary-base) / 65%);
+}
+
+#khorosWelcomeScreenButton:hover {
+  text-decoration: underline;
+  background-color: var(--cbx-color-primary-dark) !important;
+}
+
+/** Business Profile */
+.khBusinessProfileName {
+  font-size: 18px !important;
+}
+
+.khBusinessProfileIntroText {
+  font-size: 1rem !important;
+}
+
+/** System message (Privacy notification) */
+[class^='SystemMessage__systemMessage'] {
+  max-width: 66ch;
+  margin-right: 25px;
+  line-height: 21px;
+}
+
+[class^='SystemMessage__systemMessage'],
+[class^='SystemMessage__systemMessage'] p {
+  text-align: left !important;
+}
+
+[class^='SystemMessage__systemMessage'] a,
+[class^='SystemMessage__systemMessage'] a span {
+  color: var(--cbx-color-primary) !important;
+}
+
+[class^='SystemMessage__systemMessage'] a span strong {
+  font-weight: normal;
+}
+
+/* Disable firstMessage from prompting in chat  */
+#MessageItemWelcomeMessage {
+  display: none;
+}
+
+/** Send button */
+#khorosSendMessage > div {
+  border-top: 1px solid var(--cbx-color-gray50);
+  box-shadow: none !important;
+}
+
+#khorosSendMessage .khSendButton {
+  color: var(--cbx-color-gray50);
+  font-size: 16px !important;
+  border: none;
+}
+
+#khorosSendMessage .khSendButton:hover {
+  color: var(--cbx-color-gray50);
+  text-decoration: underline;
+  background-color: var(--cbx-color-white);
+  border: none;
+}
+
+/** Carousel cards */
+
+/**
+ * Custom CSS to respect newline characters in card
+ * content, and padding to align description with card
+ * title
+ */
+.khCardMessageDescription {
+  padding-right: 20px !important;
+  padding-left: 20px !important;
+  white-space: pre-line !important;
+}
+
+/** Chat UI elements */
+a.chakra-link {
+  color: var(--cbx-color-primary);
+  text-decoration: underline;
+}
+
+button.chakra-button {
+  color: var(--cbx-color-primary);
+  font-weight: 600;
+  font-size: 1rem;
+  background-color: var(--cbx-color-white);
+  border: 1px solid var(--cbx-color-primary);
+  border-radius: 4px;
+}
+
+button.chakra-button:hover {
+  color: var(--cbx-color-white);
+  text-decoration: underline;
+  background-color: var(--cbx-color-primary);
+  opacity: 1;
+}
+
+button.chakra-button svg,
+button.chakra-button svg g {
+  fill: var(--cbx-color-primary);
+}
+
+button.chakra-button:hover svg,
+button.chakra-button:hover svg g {
+  fill: var(--cbx-color-white);
+}
+
+p,
+span,
+div,
+p.chakra-text {
+  font-size: 1rem !important;
+  line-height: 1.5rem !important;
+}
+
+p.khInlineTimeStamp {
+  color: var(--cbx-color-gray30);
+  font-weight: 600 !important;
+}
+
+p.khTimeStampText {
+  color: var(--cbx-color-gray30);
+  font-size: 0.875rem !important;
+}
+
+p.khAgentName {
+  color: var(--cbx-color-gray30);
+  font-size: 0.875rem !important;
+}
+
+/** Agent messages **/
+.khCardWrapper,
+.khAgentMessageBubble {
+  background: var(--cbx-color-gray96);
+}
+
+.khAgentMessageBubble .khCardWrapper,
+.khAgentMessageBubble .khMessageBubbleText {
+  color: var(--cbx-color-black);
+}
+
+/** User messages */
+.khAgentMessageBubble .khMessageBubble {
+  color: var(--cbx-color-white);
+}
+
+/** Message timestamp tooltip */
+[role="tooltip"] {
+  font-size: 0.875rem !important;
+}
+
+/** Typing indicator */
+.khTypingIndicator {
+  background: var(--cbx-color-gray96);
+}
+
+/* Dots within typing indicator */
+.khTypingIndicator > div span {
+  background-color: rgb(5 5 5) !important;
+}
+
+/** Text input area */
+#khSendMessageTextArea {
+  font-size: 1rem !important;
+  line-height: 1.5rem !important;
+}
+
+#khSendMessageTextArea + div {
+  margin-bottom: 0 !important;
+}
+
+#khSendMessageTextArea::placeholder {
+  color: var(--cbx-color-gray30);
+  font-size: 1rem;
+  line-height: 1.5rem;
+
+  /* Firefox sets the default opacity of placeholders to < 100% */
+  opacity: 1;
+}
+
+/* Scroll bar colour for Safari, Chrome and Edge */
+.khScrollArea::-webkit-scrollbar-thumb {
+  background: rgb(89 89 89);
+}
+
+/* Scroll bar colour for Firefox */
+.khScrollArea {
+  scrollbar-color: rgb(89 89 89) --var(color-white);
+  scrollbar-width: thin;
+}</style><style>.FirstMessageChat__firstChatMessageContainer--w7e5r{position:fixed;top:45px;left:6px;width:300px;border-radius:5px;box-shadow:0 0 6px rgba(0,0,0,0.4);font-family:"Helvetica Neue", Helvetica, sans-serif;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;animation:FirstMessageChat__firstMessageChat-show-frames--UDEvG 0.7s cubic-bezier(0.62, 0.28, 0.23, 0.99);animation-delay:0s;animation-fill-mode:both}.FirstMessageChat__firstChatMessageContainer--w7e5r.FirstMessageChat__closed--xebtG{display:none}.FirstMessageChat__firstChatMessageContainer--w7e5r.FirstMessageChat__hideTextInput--dNNHh{top:70px}.FirstMessageChat__firstChatMessageContainer--w7e5r .FirstMessageChat__firstChatMessageWrapper--Y6z5p{display:flex;flex-direction:column;top:45px;max-height:200px}.FirstMessageChat__firstChatMessageContainer--w7e5r .FirstMessageChat__firstChatMessageWrapper--Y6z5p .FirstMessageChat__agentChatWrapper--Bm18T{display:flex;min-height:55px;border-radius:5px 5px 0px 0px;font-size:13px}.FirstMessageChat__firstChatMessageContainer--w7e5r .FirstMessageChat__firstChatMessageWrapper--Y6z5p .FirstMessageChat__agentChatWrapper--Bm18T img{height:40px;width:40px;margin:15px 10px;border-radius:50%;align-self:center}.FirstMessageChat__firstChatMessageContainer--w7e5r .FirstMessageChat__firstChatMessageWrapper--Y6z5p .FirstMessageChat__agentChatWrapper--Bm18T span{padding:12px 20px 10px 0;overflow:auto}.FirstMessageChat__firstChatMessageContainer--w7e5r .FirstMessageChat__firstChatMessageWrapper--Y6z5p .FirstMessageChat__textAreaWithButtons--CfT_O{padding:10px 20px 10px 10px;width:100%;min-height:50px}.FirstMessageChat__firstChatMessageContainer--w7e5r .FirstMessageChat__firstChatMessageWrapper--Y6z5p .FirstMessageChat__respondChatWrapper--nidj2{display:flex;min-height:50px;background-color:#fff;border-radius:0 0 5px 5px;overflow:hidden}.FirstMessageChat__firstChatMessageContainer--w7e5r .FirstMessageChat__firstChatMessageWrapper--Y6z5p .FirstMessageChat__respondChatWrapper--nidj2.FirstMessageChat__hideTextInput--dNNHh{min-height:0px}.FirstMessageChat__firstChatMessageContainer--w7e5r .FirstMessageChat__firstChatMessageWrapper--Y6z5p .FirstMessageChat__respondChatWrapper--nidj2 textarea{border:none;font-family:Helvetica Neue,Helvetica,Arial,sans-serif;line-height:18px;margin:16px 0 16px 15px;padding:0 4px 0 0;max-height:90px;width:100%;resize:none;outline:none;scrollbar-width:thin}.FirstMessageChat__firstChatMessageContainer--w7e5r .FirstMessageChat__firstChatMessageWrapper--Y6z5p .FirstMessageChat__respondChatWrapper--nidj2 textarea::-webkit-scrollbar{width:4px}.FirstMessageChat__firstChatMessageContainer--w7e5r .FirstMessageChat__firstChatMessageWrapper--Y6z5p .FirstMessageChat__respondChatWrapper--nidj2 textarea::-webkit-scrollbar-thumb{background:#e9e9e9;border-radius:20px}.FirstMessageChat__firstChatMessageContainer--w7e5r .FirstMessageChat__firstChatMessageWrapper--Y6z5p .FirstMessageChat__respondChatWrapper--nidj2 textarea::-webkit-scrollbar-track{background:var(--chakra-colors-transparent)}.FirstMessageChat__firstChatMessageContainer--w7e5r .FirstMessageChat__firstChatMessageWrapper--Y6z5p .FirstMessageChat__respondChatWrapper--nidj2 .FirstMessageChat__closeButtonWrapper--xoodk{display:flex;justify-content:center;align-items:center;position:absolute;top:-6px;left:282px;height:25px;width:25px;background-color:#fff;border-radius:50%;box-shadow:2px -3px 6px -3px rgba(0,0,0,0.4);cursor:pointer}.FirstMessageChat__firstChatMessageContainer--w7e5r .FirstMessageChat__firstChatMessageWrapper--Y6z5p .FirstMessageChat__respondChatWrapper--nidj2 .FirstMessageChat__closeButtonWrapper--xoodk .FirstMessageChat__closeButton--uIwpU{height:16px;width:16px}@keyframes FirstMessageChat__firstMessageChat-show-frames--UDEvG{0%{transform:scale(1);opacity:0}1%{transform:scale(1);opacity:0}to{transform:translateY(-31px);opacity:1}}
+</style><style>.WebWidget__chatWindow--DKox_{width:calc(100% - 10px);height:calc(100% - 10px);position:fixed;bottom:5px;right:5px;border-radius:10px;box-shadow:0 0 6px rgba(0,0,0,0.4);overflow:hidden;display:flex;flex-direction:column}.WebWidget__chatWindow--DKox_.WebWidget__buttonMode--o_exO{opacity:0;transform:scale(0);transform-origin:bottom right}.WebWidget__chatWindow--DKox_.WebWidget__buttonMode--o_exO.WebWidget__opened--BlC_J{opacity:1;animation:WebWidget__opened-frames--d0qpb 0.4s cubic-bezier(0.62, 0.28, 0.23, 0.99);animation-delay:.2s;animation-fill-mode:both;overflow:hidden}.WebWidget__chatWindow--DKox_.WebWidget__buttonMode--o_exO.WebWidget__closed--mofVd{opacity:0;animation:WebWidget__closed-frames--rlzkO 0.4s cubic-bezier(0.62, 0.28, 0.23, 0.99);animation-delay:0s;animation-fill-mode:both}.WebWidget__chatWindow--DKox_.WebWidget__tabMode--QW224{transition:height .2s ease;overflow:hidden}.WebWidget__chatWindow--DKox_.WebWidget__tabMode--QW224.WebWidget__closed--mofVd{overflow:hidden}.WebWidget__chatWindow--DKox_.WebWidget__tabMode--QW224.WebWidget__closed--mofVd .WebWidget__header--qQOPl{visibility:visible}.WebWidget__chatWindow--DKox_.WebWidget__tabMode--QW224.WebWidget__closed--mofVd .WebWidget__header--qQOPl .WebWidget__closeButton--dhsX0{visibility:hidden}.WebWidget__chatWindow--DKox_.WebWidget__tabMode--QW224.WebWidget__closed--mofVd:focus-visible{outline:2px solid -webkit-focus-ring-color}.WebWidget__chatWindow--DKox_.WebWidget__tabMode--QW224.WebWidget__firstMessageChat--fesX2{overflow:hidden;height:calc(100% - 10px - 151px)}.WebWidget__chatWindow--DKox_.WebWidget__tabMode--QW224.WebWidget__opened--BlC_J{overflow:visible}.WebWidget__chatWindow--DKox_.WebWidget__hidden--PmwX5{visibility:hidden}.WebWidget__chatWindow--DKox_.WebWidget__resetOnLoad--tJI4B{display:none}.WebWidget__chatWindow--DKox_ .WebWidget__header--qQOPl{min-height:44px;display:flex;justify-content:space-between;align-items:center;cursor:pointer;border-radius:10px 10px 0 0;border:none;font-family:"Helvetica Neue", Helvetica, sans-serif;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.WebWidget__chatWindow--DKox_ .WebWidget__header--qQOPl .WebWidget__emptySquare--Ke7cK{width:20px;height:20px;visibility:hidden}.WebWidget__chatWindow--DKox_ .WebWidget__header--qQOPl .WebWidget__headerText--AGs9y{position:relative;color:white;font-size:16px;font-weight:500;line-height:32px;text-align:center;margin:auto}.WebWidget__chatWindow--DKox_ .WebWidget__header--qQOPl .WebWidget__closeButton--dhsX0{width:20px;height:20px;margin-right:10px}.WebWidget__chatWindow--DKox_ .WebWidget__header--qQOPl:focus-visible{z-index:99999999}.WebWidget__chatWindow--DKox_ .WebWidget__webviewOverlay--eU5wY{position:absolute;content:" ";z-index:100;display:block;height:100%;top:0;left:0;right:0;background:rgba(0,0,0,0.5);border-radius:10px}@keyframes WebWidget__opened-frames--d0qpb{0%{opacity:0;transform:scale(0)}1%{opacity:0;transform:scale(0.1)}to{opacity:1;transform:scale(1)}}@keyframes WebWidget__closed-frames--rlzkO{0%{opacity:1;transform:scale(1)}99%{opacity:0;transform:scale(0.1)}to{opacity:0;transform:scale(0)}}@media only screen and (max-width: 767px), only screen and (max-height: 507px){.WebWidget__chatWindow--DKox_{width:calc(100% - 20px);height:calc(100% - 20px);right:10px;bottom:10px}.WebWidget__chatWindow--DKox_ .WebWidget__header--qQOPl{border-radius:0}}.WebWidget__screenReaderOnly--NMvIs{position:absolute;width:1px;clip:rect(0 0 0 0);overflow:hidden;white-space:nowrap}
+</style><style>.ButtonMessage__khButtonUI--HmuNI svg>g>g{transition:fill, 0.2s}.ButtonMessage__khButtonDarkHoverSVGFill--O1mR1:hover svg>g>g{fill:#464646}
+</style><style>.ReactMarkdownWrapper__markdownImg--PHZ7a{width:unset;border-radius:14px}a.khMarkdownTag-a{text-decoration:underline}.khMarkdownTag-code,.khMarkdownTag-pre{white-space:unset}.khMarkdownContainer{white-space-collapse:collapse}.khMarkdownContainer>.khMarkdownList{margin-inline-start:1em}.ReactMarkdownWrapper__markdown-h1--ADbGs.khMarkdownTag-h1{font-size:1.3em;font-weight:bold;margin-bottom:0}.ReactMarkdownWrapper__markdown-h2--IX4dS.khMarkdownTag-h2{font-size:1.25em;font-weight:bold;margin-bottom:0}.ReactMarkdownWrapper__markdown-h3--wF4Gj.khMarkdownTag-h3{font-size:1.2em;font-weight:bold;margin-bottom:0}.ReactMarkdownWrapper__markdown-h4--jwZIh.khMarkdownTag-h4{font-size:1.15em;font-weight:bold;margin-bottom:0}.ReactMarkdownWrapper__markdown-h5--dSFI6.khMarkdownTag-h5{font-size:1.1em;font-weight:bold;margin-bottom:0}.ReactMarkdownWrapper__markdown-h6--r9SHx.khMarkdownTag-h6{font-size:1.05em;font-weight:bold;margin-bottom:0}
+</style><style>.WidgetButton__buttonWrapper--Vg3U4{z-index:99999999}.WidgetButton__buttonContainer--wcLta{border-radius:50%;overflow:hidden;position:fixed;width:60px;height:60px;bottom:5px;right:5px;box-shadow:0 2px 5px rgba(0,0,0,0.15);transform-origin:bottom;cursor:pointer;transform:scale(1);display:flex;align-items:center;justify-content:center}.WidgetButton__buttonContainer--wcLta.WidgetButton__closed--ndwet{animation:WidgetButton__button-show-frames--PnpM_ 0.4s cubic-bezier(0.62, 0.28, 0.23, 0.99);animation-delay:.2s;animation-fill-mode:both}.WidgetButton__buttonContainer--wcLta.WidgetButton__opened--tcRDh{animation:WidgetButton__button-hide-frames--bSRYL 0.4s cubic-bezier(0.62, 0.28, 0.23, 0.99);animation-delay:0s;animation-fill-mode:both}.WidgetButton__unreadCounter--ijx7b{background-color:#e54054;border-radius:100px;position:absolute;top:0px;left:0px;text-align:center;vertical-align:middle;line-height:20px;color:white;font-size:12px;font-family:"Helvetica Neue", Helvetica, sans-serif;padding:0 6px;height:20px;min-width:20px}@keyframes WidgetButton__button-show-frames--PnpM_{0%{transform:scale(0);bottom:0;opacity:0}1%{transform:scale(1);bottom:0;opacity:0}to{bottom:20px;opacity:1}}@keyframes WidgetButton__button-hide-frames--bSRYL{0%{bottom:20px;opacity:1;transform:scale(1)}99%{bottom:0;opacity:0;transform:scale(1)}to{bottom:0;opacity:0;transform:scale(0)}}
+</style><style>.WelcomeScreen__welcomeScreenContainer--I7HrP{background-color:white;display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start;height:calc(100% - 44px);width:100%;border-radius:0 0 10px 10px;font-family:"Helvetica Neue", Helvetica, sans-serif;overflow-x:hidden;overflow-y:auto;scrollbar-width:thin;padding-bottom:110px}.WelcomeScreen__welcomeScreenContainer--I7HrP::-webkit-scrollbar{width:4px}.WelcomeScreen__welcomeScreenContainer--I7HrP::-webkit-scrollbar-thumb{background:#e9e9e9;border-radius:20px}.WelcomeScreen__welcomeScreenContainer--I7HrP::-webkit-scrollbar-track{background:var(--chakra-colors-transparent)}.WelcomeScreen__welcomeScreenContainer--I7HrP .WelcomeScreen__welcomeScreenContent--wVF_u{box-sizing:border-box;width:100%;padding:1rem}.WelcomeScreen__welcomeScreenContainer--I7HrP .WelcomeScreen__welcomeScreenContent--wVF_u .WelcomeScreen__welcomeScreenImageContainer--rLQ_m{width:100%;display:flex;align-items:center;justify-content:center}.WelcomeScreen__welcomeScreenContainer--I7HrP .WelcomeScreen__welcomeScreenContent--wVF_u .WelcomeScreen__welcomeScreenImageContainer--rLQ_m .WelcomeScreen__upperImage--MjHUl{max-width:350px}.WelcomeScreen__welcomeScreenContainer--I7HrP .WelcomeScreen__welcomeScreenContent--wVF_u .WelcomeScreen__introduction--yfj1T p{color:#2D3338;font-size:16px;word-wrap:break-word;margin:0;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.WelcomeScreen__welcomeScreenContainer--I7HrP .WelcomeScreen__welcomeScreenButton--I83ts{position:fixed;bottom:0;left:0;background:#FFFFFF;box-sizing:border-box;width:100%;padding:1rem;box-shadow:0 -1px 3px rgba(0,0,0,0.1)}.WelcomeScreen__welcomeScreenContainer--I7HrP .WelcomeScreen__welcomeScreenButton--I83ts .WelcomeScreen__button--DTTlg{width:100%;border:none;border-radius:4px;font-weight:bold;font-size:16px;text-align:center;box-sizing:border-box;padding:10px 10px;line-height:20px;cursor:pointer}.WelcomeScreen__welcomeScreenContainer--I7HrP .WelcomeScreen__welcomeScreenButton--I83ts .WelcomeScreen__button--DTTlg:focus{opacity:0.5}.WelcomeScreen__welcomeScreenContainer--I7HrP .WelcomeScreen__title--O7Umv{padding-bottom:1rem;font-weight:bolder;font-size:1.2rem}
+</style><style>.BusinessProfile__businessProfile--iXOGU{background-color:#F7F7F7;display:flex;min-height:90px;padding:18px 18px 22px}.BusinessProfile__businessProfile--iXOGU .BusinessProfile__businessIcon--gGqZk{border-radius:50%;height:50px;width:50px}.BusinessProfile__businessProfile--iXOGU .BusinessProfile__businessInfoContainer--b9E6C{padding-left:18px}.BusinessProfile__businessProfile--iXOGU .BusinessProfile__businessInfoContainer--b9E6C .BusinessProfile__businessName--z1qK8{color:#464646;font-size:18px;font-weight:bold}.BusinessProfile__businessProfile--iXOGU .BusinessProfile__businessInfoContainer--b9E6C .BusinessProfile__introductionText--Vr2lB{color:#717171;font-size:13px}
+</style><style>div.MessageCitationsSection__messageCitationsSection--pDXbp.khMessageCitationsSection{width:100%;display:flex;align-items:start;flex-direction:column;margin:0;font-size:12px;color:#717171}.MessageCitationsSection__messageCitationsDivider--vuO_x{width:100%;height:1px;background-color:#717171;opacity:0.2;margin-bottom:5px}.MessageCitationsSection__messageCitationsContent--Y8x5A{padding:0 13px 8px}.MessageCitationsSection__messageCitationsHeader--_bU1y{font-size:12px;color:#717171;margin:2px 0}.MessageCitationsSection__messageCitation--sp79e{display:flex;align-items:start;margin:0}.MessageCitationsSection__messageCitation--sp79e .MessageCitationsSection__messageCitationLink--z2c1_{color:#717171;text-decoration:underline}
+</style><style>.DropdownMessage__khDropdownDisabled--tA3KE{opacity:0.5}
+</style><style>.SystemMessage__systemMessage--gFh5x{width:100%}.SystemMessage__systemMessage--gFh5x.SystemMessage__systemMessageType--success--HeiZJ{background-color:#00a39e}.SystemMessage__systemMessage--gFh5x.SystemMessage__systemMessageType--info--So20t{background-color:#209cdf}.SystemMessage__systemMessage--gFh5x.SystemMessage__systemMessageType--warning--blBkY{background-color:#e9700c}.SystemMessage__systemMessage--gFh5x.SystemMessage__systemMessageType--danger--q6GM8{background-color:#dc365b}.SystemMessage__systemMessage--gFh5x.SystemMessage__systemMessageType--message--PxOjz{text-align:center}.SystemMessage__systemMessage--gFh5x .SystemMessage__systemMessageText--r4YP1{flex-grow:1;color:#464646;font-size:12px;font-weight:bold;line-height:18px;text-align:center}.SystemMessage__systemMessage--gFh5x.SystemMessage__systemMessageNotification--nJcXu{padding:10px 20px;margin:5px 0;border-radius:9px;display:flex;align-items:center}.SystemMessage__systemMessage--gFh5x.SystemMessage__systemMessageNotification--nJcXu .SystemMessage__systemMessageIcon--t22xJ{width:16px;height:16px;min-width:16px;margin-right:10px}.SystemMessage__systemMessage--gFh5x.SystemMessage__systemMessageNotification--nJcXu .SystemMessage__systemMessageText--r4YP1{color:white}
+</style><style>.HeaderSystemMessage__headerSystemMessage--LbSfe{max-width:300px;margin:20px 0 0 35px;text-align:center;color:#464646}.HeaderSystemMessage__headerSystemMessage--LbSfe a{color:#c20400;text-decoration:underline}
+</style><style>.SendMessage__focusButton--A4dVJ:focus-visible{outline:2px solid -webkit-focus-ring-color;border-radius:3px}.SendMessage__inputDisabled--YZkCk{cursor:not-allowed}ul#chakra-toast-manager-bottom{bottom:75px !important;word-break:break-all}ul#chakra-toast-manager-top{top:150px !important}
+</style><style>.InboxChatWindowHeader__inboxChatWindowHeader--bck1r{display:flex;height:58px;min-height:58px;align-items:center;cursor:pointer}.InboxChatWindowHeader__inboxChatWindowHeader--bck1r .InboxChatWindowHeader__headerContent--c8s_w{display:flex;color:#333;font-size:16px;font-weight:bold;line-height:32px;margin-left:10px}.InboxChatWindowHeader__inboxChatWindowHeader--bck1r .InboxChatWindowHeader__headerContent--c8s_w .InboxChatWindowHeader__headerBusinessName--TEhe1{padding-right:35px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.InboxChatWindowHeader__inboxChatWindowHeader--bck1r .InboxChatWindowHeader__headerContent--c8s_w .InboxChatWindowHeader__headerBusinessIconContainer--HV0Fh{height:100%}.InboxChatWindowHeader__inboxChatWindowHeader--bck1r .InboxChatWindowHeader__headerContent--c8s_w .InboxChatWindowHeader__headerBusinessIconContainer--HV0Fh .InboxChatWindowHeader__headerBusinessIcon--jHEl8{width:32px;height:32px;border-radius:50%;border:none;background-color:#333;margin-right:10px}.InboxChatWindowHeader__inboxChatWindowHeader--bck1r .InboxChatWindowHeader__navigateBackButton--CHhcr{border-radius:50%;background-color:transparent;width:30px;height:30px;transition:background-color 0.2s ease;margin-left:12px}.InboxChatWindowHeader__inboxChatWindowHeader--bck1r .InboxChatWindowHeader__navigateBackButton--CHhcr:hover{background-color:rgba(0,0,0,0.1)}.InboxChatWindowHeader__inboxChatWindowHeader--bck1r .InboxChatWindowHeader__spacer--fwjs9{flex-grow:1}.InboxChatWindowHeader__inboxChatWindowHeader--bck1r .InboxChatWindowHeader__closeButton--PaqTR{border-radius:50%;background-color:transparent;width:30px;height:30px;transition:background-color 0.2s ease;display:flex;justify-content:center;align-items:center;margin-right:12px}.InboxChatWindowHeader__inboxChatWindowHeader--bck1r .InboxChatWindowHeader__closeButton--PaqTR:hover{background-color:rgba(0,0,0,0.1)}.InboxChatWindowHeader__inboxChatWindowHeader--bck1r .InboxChatWindowHeader__closeButton--PaqTR .InboxChatWindowHeader__closeButtonIcon--DB0YZ{width:20px;height:20px}.InboxChatWindowHeader__inboxChatWindowHeader--bck1r.InboxChatWindowHeader__hideEllipsisMenu--AYQEr #khoros_ellipsis_div{visibility:hidden}.InboxChatWindowHeader__inboxChatWindowHeader--bck1r #khoros_ellipsis_div{border-radius:50%;background-color:transparent;width:30px;height:30px;transition:background-color 0.2s ease;display:flex;justify-content:center;align-items:center}.InboxChatWindowHeader__inboxChatWindowHeader--bck1r #khoros_ellipsis_div:hover{background-color:rgba(0,0,0,0.1)}.InboxChatWindowHeader__inboxChatWindowHeader--bck1r:focus-visible{z-index:99999999}.InboxChatWindowHeader__inboxChatWindowHeader--bck1r svg,.InboxChatWindowHeader__inboxChatWindowHeader--bck1r svg path{fill:#333}
+</style><style>.InboxChatBusinessProfile__inboxChatBusinessProfile--_9UQq{display:flex;flex-direction:column;align-items:center;justify-content:center;margin-bottom:20px}.InboxChatBusinessProfile__inboxChatBusinessProfile--_9UQq .InboxChatBusinessProfile__inboxChatBusinessIcon--sQgBQ{border-radius:50%;height:70px;width:70px}.InboxChatBusinessProfile__inboxChatBusinessProfile--_9UQq .InboxChatBusinessProfile__inboxChatBusinessName--UQWOO,.InboxChatBusinessProfile__inboxChatBusinessProfile--_9UQq .InboxChatBusinessProfile__inboxChatIntroductionText--oSu06{text-align:center;padding:5px 20px}.InboxChatBusinessProfile__inboxChatBusinessProfile--_9UQq .InboxChatBusinessProfile__inboxChatBusinessName--UQWOO{font-size:20px;font-weight:bold}.InboxChatBusinessProfile__inboxChatBusinessProfile--_9UQq .InboxChatBusinessProfile__inboxChatIntroductionText--oSu06{font-size:13px}
+</style><style>.InboxChatScreen__inboxChatContainer--i9iwB{display:flex;flex-direction:column;align-items:center;overflow-y:scroll}.InboxChatScreen__inboxChatContainer--i9iwB .InboxChatScreen__newChatButtonContainer--XxTqn{position:sticky;display:flex;justify-content:center;width:100%;padding:30px 0;background:linear-gradient(to bottom, rgba(247,247,247,0), #f7f7f7);z-index:1000}.InboxChatScreen__inboxChatContainer--i9iwB .InboxChatScreen__newChatButtonContainer--XxTqn.InboxChatScreen__hasChats--uC_Pm{bottom:0}.InboxChatScreen__inboxChatContainer--i9iwB .InboxChatScreen__newChatButtonContainer--XxTqn.InboxChatScreen__isFetching--s1e6p{display:none}.InboxChatScreen__inboxChatContainer--i9iwB .InboxChatScreen__newChatButtonContainer--XxTqn .InboxChatScreen__newChatButton--_BjKV{display:flex;justify-content:center;align-items:center;border:none;border-radius:4px;width:80%;padding:10px 10px;line-height:20px;box-shadow:0 5px 15px 1px rgba(0,0,0,0.12)}.InboxChatScreen__inboxChatContainer--i9iwB .InboxChatScreen__newChatButtonContainer--XxTqn .InboxChatScreen__newChatButton--_BjKV:focus,.InboxChatScreen__inboxChatContainer--i9iwB .InboxChatScreen__newChatButtonContainer--XxTqn .InboxChatScreen__newChatButton--_BjKV:hover{filter:brightness(0.8)}
+</style><style>.InboxChatList__loading--y0v4S{display:flex;flex-direction:row;align-items:center;width:calc(100% - 30px);justify-content:center}.InboxChatList__chatListsContainer--eOX3y{display:flex;flex-direction:column;align-items:center;width:100%}.InboxChatList__chatList--F7oJy{display:flex;flex-direction:column;border:1px solid rgba(0,0,0,0.08);border-radius:10px;width:calc(100% - 30px);background-color:white;color:#333;font-size:12px}.InboxChatList__chatList--F7oJy .InboxChatList__chatListHeader--lXrkX{padding:16px 15px 0 15px;font-weight:bold;font-size:14px}.InboxChatList__chatItem--Ea9iR{display:flex;flex-direction:row;align-items:center;justify-content:space-between;cursor:pointer;max-width:100%;padding:10px 15px}.InboxChatList__chatItem--Ea9iR:not(:last-child){border-bottom:1px solid rgba(0,0,0,0.08)}.InboxChatList__chatItem--Ea9iR:hover{background-color:#E8E8E8}.InboxChatList__chatItem--Ea9iR .InboxChatList__chatDetails--ZvaV8{display:flex;flex-direction:column;flex-grow:1;overflow:hidden}.InboxChatList__chatItem--Ea9iR .InboxChatList__chatDetails--ZvaV8 .InboxChatList__subject--zF0KB{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:14px}.InboxChatList__chatItem--Ea9iR .InboxChatList__chatDetails--ZvaV8 .InboxChatList__messagePreview--ER8VI{display:flex;flex-direction:row;align-items:center}.InboxChatList__chatItem--Ea9iR .InboxChatList__chatDetails--ZvaV8 .InboxChatList__messagePreview--ER8VI .InboxChatList__timestamp--H25u9{flex-shrink:0}.InboxChatList__chatItem--Ea9iR .InboxChatList__chatDetails--ZvaV8 .InboxChatList__messagePreview--ER8VI .InboxChatList__bullet--jNTct{margin:0 4px;font-size:21px;line-height:21px}.InboxChatList__chatItem--Ea9iR .InboxChatList__chatDetails--ZvaV8 .InboxChatList__messagePreview--ER8VI .InboxChatList__message--kcoGk{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;flex-grow:1}.InboxChatList__chatItem--Ea9iR .InboxChatList__chatAction--ol1w4{display:flex;flex-direction:row;align-items:center;flex-shrink:1;flex-grow:0}.InboxChatList__chatItem--Ea9iR .InboxChatList__chatAction--ol1w4 .InboxChatList__selectChatButton--kaHXm{border-radius:50%;background-color:transparent;width:30px;height:30px;transition:background-color 0.2s ease;display:flex;align-items:center;justify-content:center}.InboxChatList__chatItem--Ea9iR .InboxChatList__chatAction--ol1w4 .InboxChatList__selectChatButton--kaHXm:hover{background-color:rgba(0,0,0,0.1)}.InboxChatList__chatItem--Ea9iR .InboxChatList__chatAction--ol1w4 .InboxChatList__selectChatButton--kaHXm .InboxChatList__selectChatButtonIcon--gGMQ4{width:20px;height:20px}
+</style><style data-emotion="css-global" data-s=""></style><style data-emotion="css-global" data-s=""></style><style data-emotion="css-global" data-s=""></style><style data-emotion="css" data-s=""></style></head><body class="chakra-ui-light" style="background-color: transparent; overflow: hidden;"><div id="web-messenger-container" role="region" aria-label="Chat Widget"><div id="khorosFirstMessageChat" class="FirstMessageChat__firstChatMessageContainer--w7e5r FirstMessageChat__closed--xebtG FirstMessageChat__hideTextInput--dNNHh"><div class="FirstMessageChat__firstChatMessageWrapper--Y6z5p"><div class="FirstMessageChat__agentChatWrapper--Bm18T khFirstChatMessageHeader" style="background-color: rgb(194, 0, 0); color: rgb(255, 255, 255); border-radius: 5px;"><img src="https://brand-messenger.app.khoros.com/images/nab-prod/businessIconUrl-1fdf30c1-054d-4b41-9116-d0d57f9d5b59" alt="NAB" class="khFirstChatMessageHeaderImage"><span class="khFirstChatMessageHeaderText khMarkdownContainer"></span></div><div class="FirstMessageChat__respondChatWrapper--nidj2 FirstMessageChat__hideTextInput--dNNHh khFirstMessageRespondChatArea"><textarea id="khFirstChatInputArea" placeholder="Type a message..." style="color: rgb(113, 113, 113); height: 18px; font-size: 13px; display: none;"></textarea><div style="padding: 15px 10px 0px; height: 18px; display: none; color: rgb(113, 113, 113);"><button type="button" class="chakra-button khSendButton css-bwdzw9" aria-label="Send Button">Send</button></div><div class="FirstMessageChat__closeButtonWrapper--xoodk khCloseButtonWrapper"><img class="FirstMessageChat__closeButton--uIwpU khFirstMessageCloseButton" id="khFirstMessageCloseButton" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+CiAgICA8c3ZnIGZpbGw9IiMwMDAwMDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgIHZpZXdCb3g9IjAgMCAzMCAzMCIgd2lkdGg9IjIwcHgiIGhlaWdodD0iMjBweCI+CiAgICAgICAgPHBhdGggZD0iTSA3IDQgQyA2Ljc0NDEyNSA0IDYuNDg3OTY4NyA0LjA5NzQ2ODcgNi4yOTI5Njg4IDQuMjkyOTY4OCBMIDQuMjkyOTY4OCA2LjI5Mjk2ODggQyAzLjkwMTk2ODcgNi42ODM5Njg4IDMuOTAxOTY4NyA3LjMxNzAzMTMgNC4yOTI5Njg4IDcuNzA3MDMxMiBMIDExLjU4NTkzOCAxNSBMIDQuMjkyOTY4OCAyMi4yOTI5NjkgQyAzLjkwMTk2ODcgMjIuNjgzOTY5IDMuOTAxOTY4NyAyMy4zMTcwMzEgNC4yOTI5Njg4IDIzLjcwNzAzMSBMIDYuMjkyOTY4OCAyNS43MDcwMzEgQyA2LjY4Mzk2ODggMjYuMDk4MDMxIDcuMzE3MDMxMyAyNi4wOTgwMzEgNy43MDcwMzEyIDI1LjcwNzAzMSBMIDE1IDE4LjQxNDA2MiBMIDIyLjI5Mjk2OSAyNS43MDcwMzEgQyAyMi42ODI5NjkgMjYuMDk4MDMxIDIzLjMxNzAzMSAyNi4wOTgwMzEgMjMuNzA3MDMxIDI1LjcwNzAzMSBMIDI1LjcwNzAzMSAyMy43MDcwMzEgQyAyNi4wOTgwMzEgMjMuMzE2MDMxIDI2LjA5ODAzMSAyMi42ODI5NjkgMjUuNzA3MDMxIDIyLjI5Mjk2OSBMIDE4LjQxNDA2MiAxNSBMIDI1LjcwNzAzMSA3LjcwNzAzMTIgQyAyNi4wOTgwMzEgNy4zMTcwMzEyIDI2LjA5ODAzMSA2LjY4Mjk2ODggMjUuNzA3MDMxIDYuMjkyOTY4OCBMIDIzLjcwNzAzMSA0LjI5Mjk2ODggQyAyMy4zMTYwMzEgMy45MDE5Njg3IDIyLjY4Mjk2OSAzLjkwMTk2ODcgMjIuMjkyOTY5IDQuMjkyOTY4OCBMIDE1IDExLjU4NTkzOCBMIDcuNzA3MDMxMiA0LjI5Mjk2ODggQyA3LjUxMTUzMTIgNC4wOTc0Njg3IDcuMjU1ODc1IDQgNyA0IHoiLz4KICAgIDwvc3ZnPg==" alt="Close Button" aria-label="Close Button" tabindex="0"></div></div></div></div><div class="WidgetButton__buttonWrapper--Vg3U4"><button id="khorosWidgetButton" class="WidgetButton__buttonContainer--wcLta WidgetButton__closed--ndwet khWidgetButton" aria-label="Open Chat Window" tabindex="0" style="background-color: rgb(194, 0, 0); width: 58px; height: 58px; bottom: 20px; right: 14px;"><img src="https://brand-messenger.app.khoros.com/images/nab-prod/buttonIconUrl-fec0321b-e188-4f2e-8652-4484a837d57b" alt="Open Chat Window"></button></div><div class="WebWidget__chatWindow--DKox_ WebWidget__buttonMode--o_exO WebWidget__hidden--PmwX5" id="khChatWindowContainer" role="application"><div id="header" class="khChatWindowHeader WebWidget__header--qQOPl" tabindex="0" aria-label="Open Chat Window" style="color: rgb(255, 255, 255); background-color: rgb(194, 0, 0);"><span class="WebWidget__emptySquare--Ke7cK"></span><span class="WebWidget__headerText--AGs9y khChatWindowHeaderText" style="color: rgb(255, 255, 255); background-color: rgb(194, 0, 0);">NAB Messaging</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512" class="WebWidget__closeButton--dhsX0 khChatWindowHeaderCloseButton" tabindex="0" role="button" fill="#ffffff" id="khWidgetCloseButton" aria-label="Close Button"><path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg></div><div class="emotion-css-cache-1priz0t"><div class="chakra-stack emotion-css-cache-149aybh"><div class="khLoadingAnimation" style="width: 6rem; height: 4rem; display: flex; justify-content: center; align-items: center; gap: 0.5rem;"><span style="display: block; width: 0.5rem; height: 0.5rem; border-radius: 50%; background-color: rgb(0, 0, 0); transform: scale(0) translateZ(0px);"></span><span style="display: block; width: 0.5rem; height: 0.5rem; border-radius: 50%; background-color: rgb(0, 0, 0); transform: scale(0.0413128) translateZ(0px);"></span><span style="display: block; width: 0.5rem; height: 0.5rem; border-radius: 50%; background-color: rgb(0, 0, 0); transform: scale(0.377622) translateZ(0px);"></span></div></div></div><div class="chakra-stack emotion-css-cache-1k6szj6"><div class="chakra-stack emotion-css-cache-1stvqb0"><div class="chakra-stack emotion-css-cache-86obch"><div style="background-color: rgb(237, 242, 247); width: 18px; height: 18px; border-radius: 50%;"></div><div style="background-color: rgb(237, 242, 247); width: 70%; height: 18px; margin-left: 10px; border-radius: 5px;"></div></div><div class="chakra-stack emotion-css-cache-84zodg"><div style="background-color: rgb(237, 242, 247); width: 18px; height: 18px; border-radius: 50%; margin-left: 10px;"></div><div style="background-color: rgb(237, 242, 247); width: 18px; height: 18px; border-radius: 50%; margin-left: 10px;"></div></div></div></div></div></div><div id="chakra-toast-portal"><ul id="chakra-toast-manager-top" style="position: fixed; z-index: 5500; pointer-events: none; display: flex; flex-direction: column; margin: 0px auto; top: env(safe-area-inset-top, 0px); right: env(safe-area-inset-right, 0px); left: env(safe-area-inset-left, 0px);"></ul><ul id="chakra-toast-manager-top-left" style="position: fixed; z-index: 5500; pointer-events: none; display: flex; flex-direction: column; top: env(safe-area-inset-top, 0px); left: env(safe-area-inset-left, 0px);"></ul><ul id="chakra-toast-manager-top-right" style="position: fixed; z-index: 5500; pointer-events: none; display: flex; flex-direction: column; top: env(safe-area-inset-top, 0px); right: env(safe-area-inset-right, 0px);"></ul><ul id="chakra-toast-manager-bottom-left" style="position: fixed; z-index: 5500; pointer-events: none; display: flex; flex-direction: column; bottom: env(safe-area-inset-bottom, 0px); left: env(safe-area-inset-left, 0px);"></ul><ul id="chakra-toast-manager-bottom" style="position: fixed; z-index: 5500; pointer-events: none; display: flex; flex-direction: column; margin: 0px auto; bottom: env(safe-area-inset-bottom, 0px); right: env(safe-area-inset-right, 0px); left: env(safe-area-inset-left, 0px);"></ul><ul id="chakra-toast-manager-bottom-right" style="position: fixed; z-index: 5500; pointer-events: none; display: flex; flex-direction: column; bottom: env(safe-area-inset-bottom, 0px); right: env(safe-area-inset-right, 0px);"></ul></div></body></html>
