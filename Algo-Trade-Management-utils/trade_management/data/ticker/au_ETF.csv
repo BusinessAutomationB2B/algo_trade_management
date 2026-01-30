@@ -1,0 +1,171 @@
+ASXCode,Issuer,Name,Benchmark,Domicile,MER%
+A200,BetaShares,BetaShares Australia 200 ETF,Solactive Australia 200 Index,AUS,0.07
+AAA,BetaShares,BetaShares Australian High Interest Cash ETF,Australian Cash,AUS,0.18
+AGVT,BetaShares,BetaShares Australian Government Bond ETF,Solactive Australian Government 7 - 12 Year AUD TR Index,AUS,0.22
+ASIA,BetaShares,BetaShares Asia Technology Tigers ETF,Solactive Asia Ex-Japan Technology & Internet Tigers Index,AUS,0.67
+AUDS,BetaShares,BetaShares Strong Australian Dollar Fund (hedge fund),Australian Dollar,AUS,1.38
+AUMF,BlackRock,iShares Edge MSCI Australia Multifactor ETF,MSCI Australia IMI Diversified Multiple-Factor (AUD) Index,AUS,0.3
+AUST,BetaShares,Managed Risk Australian Share Fund (managed fund),N/A,AUS,0.49
+BBOZ,BetaShares,Australian Equities Strong Bear Hedge Fund,N/A,AUS,1.38
+BBUS,BetaShares,U.S. Equities Strong Bear Hedge Fund - Currency Hedged,N/A,AUS,1.38
+BEAR,BetaShares,Australian Equities Bear Hedge Fund,N/A,AUS,1.38
+BNDS,BetaShares,BetaShares Legg Mason Australian Bond Fund,N/A,AUS,0.42
+BNKS,BetaShares,BetaShares Global Banks ETF - Currency Hedged,Nasdaq Global ex-Australia Banks Hedged AUD Index,AUS,0.57
+BOND,State Street,SPDR S&P/ASX Australian Bond Fund,S&P/ASX Australian Fixed Income Index,AUS,0.24
+CETF,Van Eck Global,VanEck Vectors ChinaAMC CSI 300 ETF,CSI 300 Index,US,0.72
+CRED,BetaShares,BetaShares Australian Investment Grade Corporate Bond ETF,Solactive Australian Investment Grade Corporate Bond Select TR Index,AUS,0.25
+DIV,UBS,UBS IQ Morningstar Australia Dividend Yield ETF,Morningstar Australia Dividend Yield Focus Index,AUS,0.3
+DJRE,State Street,SPDR Dow Jones Global Real Estate Fund,SPDR Dow Jones Global Select Real Estate Securities Index,AUS,0.5
+DMKT,BetaShares,AMP Capital Dynamic Markets Fund (Hedge Fund),N/A,AUS,0.5
+DRUG,BetaShares,BetaShares Global Healthcare ETF - Currency Hedged,Nasdaq Global ex-Australia Healthcare Hedged AUD Index,AUS,0.57
+EEU,BetaShares,BetaShares Euro ETF,Euro,AUS,0.45
+EINC,BetaShares,BetaShares Legg Mason Equity Income Fund,N/A,AUS,0.85
+EMMG,BetaShares,BetaShares Legg Mason Emerging Markets Fund,N/A,AUS,1
+ETF,UBS,UBS IQ Morningstar Australia Quality,Morningstar Australia Moat Focus Index,AUS,0.3
+ETHI,BetaShares,BetaShares Global Sustainability Leaders ETF,Nasdaq Future Global Sustainability Leaders Index,AUS,0.59
+EX20,BetaShares,BetaShares Australian EX-20 Portfolio Diversifier ETF,Nasdaq Australia Completion Cap Index,AUS,0.25
+F100,BetaShares,BetaShares FTSE 100 ETF,FTSE 100 Index,AUS,0.45
+FAIR,BetaShares,BetaShares Australian Sustainability Leaders ETF,Nasdaq Future Global Sustainability Leaders Index,AUS,0.49
+FDIV,Van Eck Global,VanEck Vectors S&P/ASX Franked Dividend ETF,S&P/ASX Franked Dividend Index,AUS,0.35
+FLOT,Van Eck Global,VanEck Vectors Australian Floating Rate ETF,The Bloomberg AusBond Credit FRN 0+ Yr Index,AUS,0.23
+FOOD,BetaShares,BetaShares Global Agriculture ETF - Currency Hedged,Nasdaq Global ex-Australia Agriculture Companies Hedged AUD Index,AUS,0.57
+FUEL,BetaShares,BetaShares Global Energy Companies ETF - Currency Hedged,Nasdaq Global ex-Australia Energy Hedged AUD Index,AUS,0.57
+GDX,Van Eck Global,VanEck Vectors Gold Miners ETF,NYSE Arca Gold Miners Index,US,0.53
+GEAR,BetaShares,Geared Australian Equity Fund (hedge fund),S&P/ASX 200,AUS,0.8
+GGUS,BetaShares,Geared U.S. Equity Fund - Currency Hedged (hedge fund),S&P 500 Hedged AUD,AUS,0.74
+GLIN,BetaShares,AMP Capital Global Infrastructure Securities Fund (Unhedged) (managed fund),N/A,AUS,0.85
+GOVT,State Street,SPDR S&P/ASX Australian Government Bond Fund,S&P /ASX Bond Index,AUS,0.22
+HACK,BetaShares,BetaShares Global Cybersecurity ETF,Nasdaq Consumer Technology Association Cybersecurity Index,AUS,0.67
+HBRD,BetaShares,BetaShares Active Australian Hybrids Fund (managed fund),Solactive Australian Hybrid Securities Index,AUS,0.55
+HEUR,BetaShares,WisdomTree Europe ETF – Currency Hedged,WisdomTree Europe Hedged Equity Index,AUS,0.58
+HJPN,BetaShares,WisdomTree Japan ETF – Currency Hedged,WisdomTree Japan Hedged Equity Index,AUS,0.58
+HVST,BetaShares,Australian Dividend Harvester Fund (managed fund),N/A,AUS,0.9
+IAA,BlackRock,iShares Asia 50 ETF,S&P Asia 50,AUS (changed)[5],0.5
+IAF,BlackRock,iShares UBS Composite Bond ETF,Bloomberg AusBond Composite Index,AUS,0.24
+IBK,BlackRock,iShares MSCI BRIC ETF,MSCI BRIC,US,0.69
+IEM,BlackRock,iShares MSCI Emerging Markets ETF,MSCI Emerging Markets,AUS (changed)[5],0.69
+IEU,BlackRock,iShares Europe ETF,S&P Europe 350,AUS (changed)[5],0.6
+IFRA,Van Eck Global,VanEck Vectors FTSE Global Infrastructure (Hedged) ETF,FTSE Developed Core Infrastructure 50/50 Hedged into Australian Dollars Index,AUS,0.52
+IGB,BlackRock,iShares UBS Treasury ETF,Bloomberg AusBond Treasury Index,AUS,0.26
+IHCB,BlackRock,iShares Core Global Corporate Bond (AUD Hedged) ETF,Bloomberg Barclays Global Aggregate Corporate Bond Index (AUD Hedged),US,0.26
+IHD,BlackRock,iShares S&P/ASX Dividend Opportunities Fund ETF,S&P/ASX Dividend Opportunities Index,AUS,0.3
+IHEB,BlackRock,iShares J.P. Morgan USD Emerging Markets Bond (AUD Hedged) ETF,J.P. Morgan EMBI Global Core Index (AUD Hedged),US,0.51
+IHHY,BlackRock,iShares Global High Yield Bond (AUD Hedged) ETF,Markit iBoxx Global Developed Markets Liquid High Yield Capped Index (AUD Hedged),US,0.56
+IHK,BlackRock,iShares MSCI Hong Kong ETF,MSCI Hong Kong,US,0.53
+IHOO,BlackRock,iShares Global 100 AUD Hedged,S&P Global 100 Hedged AUD,AUS,0.46
+IHVV,BlackRock,iShares S&P 500 AUD Hedged,S&P 500 Hedged AUD,AUS,0.13
+IHWL,BlackRock,iShares Core MSCI World All Cap (AUD Hedged) ETF,MSCI World Investable Market Index 100% Hedged to AUD,AUS,0.19
+IJH,BlackRock,iShares Core S&P MidCap 400,S&P Midcap 400,AUS (changed)[5],0.15
+IJP,BlackRock,iShares MSCI Japan ETF,MSCI Japan,AUS (changed)[5],0.53
+IJR,BlackRock,iShares Core S&P SmallCap 600,S&P SmallCap 600,AUS (changed)[5],0.12
+IKO,BlackRock,iShares MSCI South Korea Capped ETF,MSCI South Korea Capped Index Fund,AUS (changed)[5],0.61
+ILB,BlackRock,iShares UBS Government Inflation ETF,Bloomberg AusBond Inflation Government Index,AUS,0.26
+ILC,BlackRock,iShares S&P/ASX 20 ETF,S&P/ASX 20,AUS,0.24
+INCM,BetaShares,BetaShares Global Income Leaders ETF,Nasdaq Global Income Leaders NTR Index,AUS,0.45
+IOO,BlackRock,iShares Global 100 ETF,S&P Global 100,AUS (changed)[5],0.4
+IOZ,BlackRock,iShares MSCI Australia 200 ETF,MSCI Australia 200,AUS,0.19
+IRU,BlackRock,iShares Russell 2000 ETF,Russell 2000,US,0.2
+ISG,BlackRock,iShares MSCI Singapore ETF,MSCI Singapore,US,0.53
+ISO,BlackRock,iShares S&P/ASX Small Ordinaries ETF,S&P/ASX Small Ordinaries,AUS,0.55
+ITW,BlackRock,iShares MSCI Taiwan ETF,MSCI Taiwan,AUS (changed)[5],0.61
+IVE,BlackRock,iShares MSCI EAFE ETF,MSCI EAFE,AUS (changed)[5],0.34
+IVV,BlackRock,iShares Core S&P 500,S&P 500,AUS (changed)[5],0.04
+IWLD,BlackRock,iShares Core MSCI World All Cap ETF,MSCI World Investible Market Index,AUS,0.16
+IXI,BlackRock,iShares Global Consumer Staples ETF,S&P Global Consumer Staples,AUS (changed)[5],0.48
+IXJ,BlackRock,iShares Global Healthcare ETF,S&P Global Healthcare,AUS (changed)[5],0.48
+IXP,BlackRock,iShares Global Telecom ETF,S&P Global Telecommunications,US,0.48
+IZZ,BlackRock,iShares China Large-Cap ETF,FTSE China 25,AUS (changed)[5],0.72
+MNRS,BetaShares,BetaShares Global Gold Miners ETF - Currency Hedged,Nasdaq Global ex-Australia Gold Miners Hedged AUD Index,AUS,0.57
+MOAT,Van Eck Global,VanEck Vectors Morningstar Wide Moat ETF,Morningstar® Wide Moat Focus IndexTM,US,0.49
+MOGL,Montgomery,Montgomery Global Equities Fund,N/A,US,1.32
+MVA,Van Eck Global,VanEck Vectors Australian Property ETF,MVIS Australia A-REITs Index,AUS,0.35
+MVB,Van Eck Global,VanEck Vectors Australian Banks ETF,MVIS Australia Banks Index,AUS,0.28
+MVE,Van Eck Global,VanEck Vectors S&P/ASX MidCap ETF,S&P/ASX Midcap 50 Index,AUS,0.45
+MVOL,BlackRock,iShares Edge MSCI Australia Minimum Volatility ETF,MSCI Australia IMI Select Minimum Volatility (AUD) Index,AUS,0.3
+MVR,Van Eck Global,VanEck Vectors Australian Resources ETF,MVIS Australia Resources Index,AUS,0.35
+MVS,Van Eck Global,VanEck Vectors Small Cap Dividend Payers ETF,MVIS Australia Small-Cap Dividend Payers Index,AUS,0.49
+MVW,Van Eck Global,VanEck Vectors Australian Equal Weight ETF,MVIS Australia Equal Weight Index,AUS,0.35
+NDQ,BetaShares,BetaShares NASDAQ 100,NASDAQ 100,AUS,0.48
+OOO,BetaShares,BetaShares Crude Oil Index ETF- Currency Hedged (Synthetic),S&P/GSCI Crude Oil Index,AUS,0.69
+OZF,State Street,SPDR S&P/ASX 200 Financials ex A-REITS Fund,S&P/ASX 200 X-A-REITs,AUS,0.4
+OZR,State Street,SPDR S&P/ASX 200 Resources Fund,S&P/ASX 200 Resources,AUS,0.4
+POU,BetaShares,BetaShares British Pound ETF,British Pound,AUS,0.45
+QAG,BetaShares,BetaShares Agricultural ETF - Currency Hedged (Synthetic),S&P/GSCI Agriculture Index,AUS,0.69
+QAU,BetaShares,BetaShares Gold Bullion ETF - Currency Hedged,Gold,AUS,0.49
+QCB,BetaShares,BetaShares Commodities Basket ETF - Currency Hedged (Synthetic),S&P/GSCI Light Energy Index,AUS,0.69
+QFN,BetaShares,BetaShares S&P/ASX 200 Financials Sector ETF,S&P/ASX 200 Financials,AUS,0.39
+QLTY,BetaShares,BetaShares Global Quality Leaders ETF,iSTOXX MUTB Global Ex-Australia Quality Leaders Index,AUS,0.35
+QOZ,BetaShares,BetaShares FTSE RAFI Australia 200 ETF,FTSE RAFI Australia 200,AUS,0.3
+QPON,BetaShares,BetaShares Australian Bank Senior Floating Rate Bond ETF,Solactive Australian Bank Senior Floating Rate Bond Index,AUS,0.22
+QRE,BetaShares,BetaShares S&P/ASX 200 Resources Sector ETF,S&P/ASX 200 Resources,AUS,0.39
+QUAL,Van Eck Global,VanEck Vectors MSCI World ex Australia Quality ETF,MSCI World ex Australia Quality Index,AUS,0.4
+QUS,BetaShares,Betashares FTSE RAFI US 1000 ETF,FTSE RAFI US 1000,AUS,0.4
+RARI,Russell Investments,Russell Australian Responsible Investment ETF,Russell Australia ESG High Dividend Index,AUS,0.45
+RBTZ,BetaShares,BetaShares Global Robotics and Artificial Intelligence ETF,Indxx Global Robotics & Artificial Intelligence Thematic Index,AUS,0.57
+RCB,Russell Investments,Russell Australian Select Corporate Bond ETF,Australian Corporate Bonds,AUS,0.28
+RDV,Russell Investments,Russell High Dividend Australian Shares ETF,Russell High Dividend Index,AUS,0.34
+RENT,BetaShares,AMP Capital Global Property Securities Fund (Unhedged) (managed fund),N/A,AUS,0.99
+RGB,Russell Investments,Russell Australian Government Bond ETF,Australian Government Bonds,AUS,0.24
+RINC,BetaShares,BetaShares Legg Mason Real Income Fund,N/A,AUS,0.85
+ROBO,ETF Securities,ETFS ROBO Global Robotics and Automation ETF,ROBO Global® Robotics and Automation Index,AUS,0.69[2]
+RSM,Russell Investments,Russell Australian Semi-Government Bond ETF,Australian Semi-Government Bonds,AUS,0.26
+RVL,Russell Investments,Russell Australia Value ETF,Russell Australian Value Index,AUS,0.34
+SFY,State Street,SPDR 50 Fund,S&P/ASX 50,AUS,0.28
+SLF,State Street,SPDR S&P/ASX 200 Listed Property Fund,S&P/ASX 200 A-REITs,AUS,0.4
+SMLL,BetaShares,Australian Small Companies Select Fund (managed fund),S&P/ASX Small Ordinaries Accumulation Index,AUS,0.39
+SPY,State Street,SPDR S&P 500 ETF Trust,S&P 500,US,0.09
+SSO,State Street,SPDR S&P/ASX Small Ordinaries Fund,S&P/ASX Small Ordinaries,AUS,0.5
+STW,State Street,SPDR 200 Fund,S&P/ASX 200,AUS,0.19
+SYI,State Street,SPDR MSCI Australia Select High Dividend Yield Fund,MSCI Australian Select High Dividend Yield Index,AUS,0.35
+TECH,ANZ/ETF Securities,ETFS Morningstar Global Technology ETF,Morningstar Developed Markets Technology Moat Focus Index,AUS,0.45
+UBA,UBS,UBS IQ MSCI Australia Ethical,MSCI Australia ex Tobacco ex Controversial Weapons Index,AUS,0.17
+UBE,UBS,UBS IQ MSCI Europe Ethical ETF,MSCI Europe ex Australia ex Tobacco ex Controversial Weapons Index,AUS,0.4
+UBJ,UBS,UBS IQ MSCI Japan Ethical ETF,MSCI Japan ex Tobacco ex Controversial Weapons Index,AUS,0.4
+UBP,UBS,UBS IQ MSCI Asia APREX 50 Ethical ETF,MSCI Asia APEX 50 ex Tobacco ex Controversial Weapons Index,AUS,0.45
+UBU,UBS,UBS IQ MSCI USA Ethical ETF,MSCI USA ex Australia ex Tobacco ex Controversial Weapons Index,AUS,0.2
+UBW,UBS,UBS IQ MSCI World ex Australia Ethical ETF,MSCI World ex Australia ex Tobacco ex Controversial Weapons Index,AUS,0.35
+UMAX,BetaShares,S&P 500 Yield Maximiser Fund (managed fund),S&P 500,AUS,0.79
+USD,BetaShares,BetaShares U.S. Dollar ETF,US Dollar,AUS,0.45
+VACF,Vanguard,Vanguard Australian Corporate Fixed Interest Index Fund,Bloomberg AusBond Credit 0+ Yr Index,AUS,0.26
+VAE,Vanguard,Vanguard FTSE Asia ex Japan Shares Index ETF,FTSE Asia Pacific ex Japan Australia and New Zealand Net Index,AUS,0.4
+VAF,Vanguard,Vanguard Australian Fixed Interest Index,Bloomberg AusBond Composite Index,AUS,0.2
+VAP,Vanguard,Vanguard Australian Property Securities Index ETF,S&P/ASX 300 A-REITs,AUS,0.23
+VAS,Vanguard,Vanguard Australian Shares Index,S&P/ASX 300,AUS,0.1
+VBLD,Vanguard,Vanguard Global Infrastructure Index Fund,FTSE Developed Core Infrastructure Index,AUS,0.47
+VBND,Vanguard,Vanguard Global Aggregate Bond Index Fund (Hedged),Bloomberg Barclays Global Aggregate Float-Adjusted and Scaled Index (AUD hedged),AUS,0.2
+VCF,Vanguard,Vanguard International Credit Securities Index Fund (Hedged),Bloomberg Barclays Global Aggregate Corporate and Government-Related Scaled Index (AUD hedged),AUS,0.3
+VDBA,Vanguard,Vanguard Diversified Balanced Index ETF,N/A,AUS,0.27
+VDCO,Vanguard,Vanguard Diversified Conservative Index ETF,N/A,AUS,0.27
+VDGR,Vanguard,Vanguard Diversified Growth Index ETF,N/A,AUS[3],0.27
+VDHG,Vanguard,Vanguard Diversified High Growth Index ETF,N/A,AUS[4],0.27
+VEFI,Vanguard,Vanguard Ethically Conscious Global Aggregate Bond Index Fund,Bloomberg Barclays MSCI Global Aggregate SRI Exclusion Float Adjusted Index (AUD hedged),AUS,0.26
+VEQ,Vanguard,Vanguard FTSE Europe Shares ETF,FTSE Developed Europe All Cap Index (in AUD),AUS,0.35
+VESG,Vanguard,Vanguard Ethically Conscious International Shares Index Fund,FTSE Developed ex Australia ex Non-Renewable Energy/Vice Products/Weapons,AUS,0.18
+VEU,Vanguard,Vanguard All-World ex-US Shares Index,FTSE All-World ex US Index,US,0.09
+VGAD,Vanguard,Vanguard MSCI Index International Series (Hedged),MSCI World ex-Australia (AUD hedged),AUS,0.21
+VGB,Vanguard,Vanguard Australian Government Bond Index ETF,Bloomberg AusBond Government Index,AUS,0.2
+VGE,Vanguard,Vanguard FTSE Emerging Markets Shares,FTSE Emerging Index (in AUD),AUS,0.48
+VGMF,Vanguard,Vanguard Global Multi-Factor Active ETF (managed fund),FTSE Developed All-Cap Index (in AUD),AUS,0.33
+VGS,Vanguard,Vanguard MSCI Index International Series,MSCI World ex-Australia,AUS,0.18
+VHY,Vanguard,Vanguard Australian Shares High Yield ETF,FTSE ASFA Australian High Dividend Yield Index,AUS,0.25
+VIF,Vanguard,Vanguard International Fixed Interest Index Fund (Hedged),Bloomberg Barclays Global Treasury Scaled Index (AUD hedged),AUS,0.2
+VISM,Vanguard,Vanguard International Small Companies Index Fund,MSCI World ex-Australia Small Cap Index,AUS,0.32
+VLC,Vanguard,Vanguard MSCI Australian Large Companies Index,MSCI Large Cap Index,AUS,0.2
+VMIN,Vanguard,Vanguard Global Minimum Volatility Active ETF (managed fund),FTSE Global All Cap Index (AUD hedged),AUS,0.28
+VSO,Vanguard,Vanguard MSCI Australian Small Companies Index,MSCI Small Cap Index,AUS,0.3
+VTS,Vanguard,Vanguard US Total Market Shares Index,CRSP US Broad Market Index,US,0.03
+VVLU,Vanguard,Vanguard Global Value Equity Active ETF (managed fund),FTSE Developed All-Cap Index (in AUD),AUS,0.28
+WDIV,State Street,SPDR S&P Global Dividend Fund,SPDR S&P Global Dividend Aristocrats Fund,AUS,0.5
+WDMF,BlackRock,iShares Edge MSCI World Multifactor ETF,MSCI World Diversified Multiple-Factor (AUD) Index,AUS,0.35
+WEMG,State Street,SPDR S&P Emerging Markets Fund,SPDR S&P Emerging Markets Large Mid Cap Index,AUS,0.64
+WRLD,BetaShares,Managed Risk Global Share Fund (managed fund),N/A,AUS,0.54
+WXHG,State Street,SPDR S&P World Ex Australia (Hedged) Fund,S&P Developed ex Australia LargeMidCap Hedged AUD Index,AUS,0.48
+WXOZ,State Street,SPDR S&P World Ex Australia Fund,S&P Developed ex Australia LargeMidCap AUD Index.,AUS,0.42
+YANK,BetaShares,BetaShares Strong U.S. Dollar Fund (hedge fund),US Dollar,AUS,1.38
+YMAX,BetaShares,Equity Yield Maximiser Fund (managed fund),S&P/ASX 20,AUS,0.79
+ZCNH,ANZ/ETF Securities,ANZ ETFS Physical Renminbi ETF,Renminbi,AUS,0.57
+ZGOL,ANZ/ETF Securities,ANZ ETFS Physcial Gold ETF,Gold,AUS,0.4
+ZOZI,ANZ/ETF Securities,ANZ ETFS S&P/ASX 100 ETF,S&P/ASX 100 Index,AUS,0.24
+ZUSD,ANZ/ETF Securities,ANZ ETFS Physical US Dollar ETF,US Dollar,AUS,0.45
+ZYAU,ANZ/ETF Securities,ANZ ETFS S&P/ASX 300 High Yield Plus ETF,S&P/ASX Shareholder Yield Index,AUS,0.35
+ZYUS,ANZ/ETF Securities,ANZ ETFS S&P 500 High Yield Low Volatility ETF,S&P 500 Low Volatility High Dividend Index,AUS,0.35

@@ -1,0 +1,21 @@
+8/3/2020
+
+set up this repository to include all the tools that I have developed over the years
+
+1) set up different folders
+2) python code folder
+3) python notebook folder
+4) R code folder
+
+
+20/12/2021
+
+rebuild HP 2012. if not for browsing / TWS, python coding and mysql coding is all fine
+should use this machine for development work
+
+use samsung as a wifi teather device to overcome the slow wifi on the machine itself.
+
+start building ETF database now.
+
+Should also build reader to SAXO for delayed ETF data, delayed tick data, put them into database.
+

@@ -1,0 +1,2 @@
+INSERT INTO `db_au_stk`.`anz.ax` (`index`, `open`, `high`, `low`, `close`, `volume`, `adjusted`) VALUES ('2019-07-29', '25', '26', '24', '25', '1000', '16000');
+SELECT `index`, `open`, `high`, `low`, `close`, `volume`, `adjusted`, `created_date`, `last_updated` FROM `db_au_stk`.`anz.ax` WHERE  `index`='2019-07-29';
