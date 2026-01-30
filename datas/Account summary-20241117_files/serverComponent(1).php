@@ -1,2 +1,0 @@
-
-Bootstrapper._serverTime = '2024-11-17 09:28:44'; Bootstrapper._clientIP = '54.206.77.154'; Bootstrapper.insertPageFiles(['https://tms.nab.com.au/nab/ib-prod/code/b266c5e309342c7d03aa5b791a597e45.js?conditionId0=4954125','https://tms.nab.com.au/nab/ib-prod/code/4c04e7f358283607aa65be201e7b4c11.js?conditionId0=422932']);Bootstrapper.setPageSpecificDataDefinitionIds([66129,62372,62375]);
